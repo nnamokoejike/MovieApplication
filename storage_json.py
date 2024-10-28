@@ -1,6 +1,6 @@
 import json
 
-from MovieApplication.istorage import IStorage
+from istorage import IStorage
 
 
 class StorageJson(IStorage):

@@ -1,5 +1,5 @@
 import csv
-from MovieApplication.istorage import IStorage
+from istorage import IStorage
 
 
 class StorageCsv(IStorage):
