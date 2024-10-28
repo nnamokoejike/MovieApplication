@@ -66,7 +66,7 @@ class MovieApp:
             print("No movies to generate a website.")
             return
 
-        with open("index_template.html", "r") as template_file:
+        with open("index.html", "r") as template_file:
             template_content = template_file.read()
 
         movie_items = ""
@@ -79,7 +79,7 @@ class MovieApp:
 
         output_content = template_content.replace("__TEMPLATE_MOVIE_GRID__", movie_items)
 
-        with open("../index.html", "w") as output_file:
+        with open("index.html", "w") as output_file:
             output_file.write(output_content)
 
         print("Website generated successfully as 'index.html'.")
